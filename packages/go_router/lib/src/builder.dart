@@ -437,6 +437,7 @@ class _CustomNavigatorState extends State<_CustomNavigator> {
         controller: _controller!,
         child: Navigator(
           key: widget.navigatorKey,
+		  clipBehavior: Clip.none,
           restorationScopeId: widget.navigatorRestorationId,
           pages: _pages!,
           observers: widget.observers,
